@@ -5,27 +5,30 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+:root {
+	//colours
+	//light mode colours
+	--light-background:#FFF;
+	--text-light-base:#34495E;
+	--text-light-accent:#C0392B;
+	--text-light-subtle:#7F8FA6;
+
+	//dark mode colours
+	// --dark-background:#30336B;
+	// --text-dark-base:#DCDDE1;
+	// --text-dark-accent:#ECCC68;
+}
+
 html	{
 
 	//fonts
 	font-size:10px;
 	--serif:"Arvo", serif;
 	--sans-serif:"Lato", sans-serif;
-
-	//colours
-	//light mode
-	--light-background:#FFF;
-	--text-light-base:#34495E;
-	--text-light-accent:#C0392B;
-	--text-light-subtle:#7F8FA6;
-
-	//dark mode
-	--dark-background:#30336B;
-	--text-dark-base:#DCDDE1;
-	--text-dark-accent:#ECCC68;
 }
 
 body {
+	background:var(--light-background);
 	color:var(--text-light-base);
 }
 
@@ -34,14 +37,14 @@ body {
 	width:100%;
 	padding:40px;
 	margin:0 auto;
-	background: url("../../images/background-splatter.png");
+	background: url("../../images/background-splatter.png"), var(--light-background);
 	background-repeat:no-repeat;
 	background-size:120%;
 	background-position:95% 0%;
 }
 
 .wrapper--intro {
-	background:url("../../images/background-spagehetti.png");
+	background:url("../../images/background-spagehetti.png"), var(--light-background);
 	background-repeat:no-repeat;
 	background-position:100% 100%
 }
@@ -71,7 +74,7 @@ h1 {
 	border:2px solid var(--text-light-base);
 	background:var(--light-background);
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	padding:5px 20px;
+	padding:0px 10px;
 	position: relative;
 	z-index: 10;
 
@@ -82,14 +85,17 @@ h1 {
 	p {
 		margin:0;
 		font-size:1.6rem;
+
 	}
 
 	button {
 		border:none;
 		background:var(--background-light);
+		padding:5px 10px;
+		color:var(--text-light-base);
 	}
 
-	#buttonLightText {
+	#buttonLight{
 		text-decoration: underline;
 	}
 
