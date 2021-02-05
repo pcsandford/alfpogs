@@ -5,4 +5,25 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body {color:#333;}
+html	{
+
+	//fonts
+	font-size:10px;
+	--serif:"Arvo", serif;
+	--sans-serif:"Lato", sans-serif;
+
+	//colours
+	//light mode
+	--text-light-base:#34495E;
+	--text-light-accent:#C0392B;
+	--text-light-subtle:#7F8FA6;
+
+	//dark mode
+	--background:#30336B;
+	--text-dark-base:#DCDDE1;
+	--text-dark-accent:#ECCC68;
+}
+
+h1 {
+	font-family:var(--serif);
+}
