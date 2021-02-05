@@ -10,18 +10,21 @@
 </head>
 <body>
 
-	<div class="wrapper">
+	<div class="wrapper wrapper--intro">
 		<header>
-			<h1>Cameron Codes</h1>
+			<a href="http://www.cameroncodes.com">
+				<h1>Peter Cameron</h1>
+			</a>
 			<div class="button button--light-dark" id="buttonLightDark">
-				<a href=""><p class="button--light-dark__text" id="buttonLightText">Light</p></a>
-				<a href=""><p class="button--light-dark__text" id="buttonDarkText">Dark</p></a>
+				<button><p class="button--light-dark__text" id="buttonLightText">Light</p></button>
+				<p class="division"> / </p>
+				<button><p class="button--light-dark__text" id="buttonDarkText">Dark</p></button>
 			</div>
 		</header>
 
 		<section class="tldr">
-			<p><span class="text--special">TL;DR</span> I am a graphic designer and front end developer currently available for part-time work.</p>
-			<p>..and my daughter helped with the background art.</p>
+			<p class="tldr__text"><span class="text--special">TL;DR</span> I am a graphic designer and front end developer currently available for part-time work.</p>
+			<p class="tldr__text">..and my daughter helped with the background art.</p>
 			<ul class="social-buttons">
 				<li class="button button--twitter">
 					<a href="">
@@ -42,19 +45,22 @@
 
 		</section>
 
+	</div>
 		<main>
 
+	<div class="wrapper">
+
 			<section class="intro">
-				<p><span class="text--special" id="greeting">Good Morning!</span> My name is Peter and  am a graphic designer, front end developer, husband and father currently living in Toronto, Canada 🇨🇦</p>
+				<p><span class="text--special" id="greeting">Good Morning!</span> My name is Peter and I am a graphic designer, front end developer, husband and father currently living in Toronto, Canada 🇨🇦</p>
 				<p>Previously a senior designer at Rise Vision, I have extensive experience designing and developing content with a focus on education, including creating copy and working directly with various different clients.</p>
-				<p>I am currently available for freelance projects as well as part-time and contract work.<span class="text--dark-only" id="darkModeMessage"> And I like dark modes too 😊</span></p>
+				<p>I am currently available for freelance projects as well as part-time and contract work.<span class="text--dark-only" id="darkModeMessage"> And I like dark themes too 😊</span></p>
 			</section>
 
 			<section class="projects">
-				<h2 class="text-subtitle">Projects</h2>
+				<h2 class="text-subtitle text--special">Projects</h2>
 
 				<div class="project project--right">
-					<img src="" alt="">
+					<img src="images/fl.gif" alt="Financial literacy animated template">
 					<div class="project__text">
 						<h3>Digital Displays</h3>
 						<p>Design and development of multiple passive and interactive digital displays with a focus on K-12, higher education, and financial clients.</p>
@@ -67,10 +73,10 @@
 							<li>Javascript</li>
 							<li>JQuery</li>
 						</ul>
-						<ul>
+						<ul class="button--projects">
 							<li class="button button--more">
-								<a href="">
-									<p>see more</p>
+								<a href="/signage-projects.html">
+									<p>view more</p>
 								</a>
 							</li>
 						</ul>
@@ -87,29 +93,29 @@
 							<li>SASS</li>
 							<li>Javascript</li>
 						</ul>
-						<ul>
+						<ul class="button--projects">
 							<li class="button button--visit">
-								<a href="">
+								<a href="http://www.patternarcade.com">
 									<p>visit site</p>
 								</a>
 							</li>
 						</ul>
 					</div>
-					<img src="" alt="">
+					<img src="images/pa.png" alt="pattern arcade website logo and welcome">
 				</div>
 
 				<div class="project project--right">
-					<img src="" alt="">
+					<img src="images/pm.png" alt="Piet Mondrian painting using CSS Grids">
 					<div class="project__text">
 						<h3>Piet Mondrian Grids</h3>
-						<p>Personal project to learn more about CSS Grids by recreating the work of Piet Mondrian (1872 - 1944).</p>
+						<p>Personal project to learn more about CSS Grids by recreating selected works of Piet Mondrian (1872 - 1944).</p>
 						<ul class="skills-list">
 							<li>HTML5</li>
 							<li>SASS</li>
 						</ul>
-						<ul>
+						<ul class="button--projects">
 							<li class="button button--visit">
-								<a href="">
+								<a href="http://www.cameroncodes.com/mondrian">
 									<p>visit site</p>
 								</a>
 							</li>
@@ -128,27 +134,29 @@
 							<li>Javascript</li>
 							<li>php</li>
 						</ul>
-						<ul>
+						<ul class="button--projects">
 							<li class="button button--visit">
-								<a href="">
+								<a href="http://http://www.national-executive.com/" target="_blank">
 									<p>visit site</p>
 								</a>
 							</li>
 						</ul>
 					</div>
-					<img src="" alt="">
+					<img src="images/ne.png" alt="National Executive website header image and menu bar">
 				</div>
 
 			</section>
 
-		</main>
-
-		<footer>
-			<p>&copy Peter Cameron 2021</p>
-			<p>Background images by Eilidh 2021</p>
+			<footer>
+				<p>&copy Peter Cameron 2021</p>
+				<p>Background images by Eilidh 2021</p>
 		</footer>
-	</div>
 
+		</div>
+
+
+
+		</main>
 
 	<script src="dist/scripts/script.js"></script>
 </body>
