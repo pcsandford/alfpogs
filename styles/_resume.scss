@@ -1,0 +1,151 @@
+.resume__wrapper {
+	max-width:900px;
+	width:100%;
+	padding:40px;
+	margin:0 auto;
+	position: relative;
+
+	.resume__button {
+		position: sticky;
+		top:20px;
+		right:400px;
+		background:var(--background-light);
+		padding:5px 10px;
+		color:var(--text-light-base);
+	}
+
+	.resume__header {
+		width:100%;
+		text-align:center;
+		border-bottom:2px solid var(--text-light-subtle);
+		padding-bottom:20px;
+		margin-bottom: 20px;
+
+		h1, h2 {
+			margin: 10px 0;
+		}
+
+		h1 {
+			font-size:4.8rem;
+			color:var(--text-light-accent);
+		}
+
+		h2 {
+			font-size:1.8rem;
+			font-weight:400;
+		}
+	}
+
+	.resume__subheader {
+		font-family: var(--serif);
+		color:var(--text-light-subtle);
+		font-size:1.8rem;
+	}
+}
+
+h3 {
+	display:inline-block;
+	position: relative;
+	margin-bottom:10px;
+
+	&:before {
+		position: absolute;
+		content:"";
+		height:2px;
+		width:60px;
+		background:var(--text-light-accent);
+		left:0;
+		bottom:-4px;
+	}
+}
+
+.resume__intro {
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:flex-start;
+	font-size:1.4rem;
+
+	.resume__intro__contact {
+		width:35%;
+		margin-right:10%;
+
+		ul {
+			list-style:none;
+			margin: 0;
+			padding: 0;
+
+
+			li {
+				display:flex;
+				justify-content:flex-start;
+				align-items:center;
+			}
+
+			li img {
+				width:30px;
+				margin-right:10px;
+			}
+		}
+	}
+
+}
+
+.resume__education {
+	width:100%;
+
+	ul {
+		list-style:none;
+		padding: 0;
+		margin: 0;
+	}
+
+	li p {
+		font-size:1.4rem;
+	}
+
+	li p span {
+		font-weight:700;
+	}
+}
+
+.resume__experience, .resume__talks {
+
+	ul {
+		list-style:none;
+		margin: 0;
+		padding: 0;
+	}
+
+	p {
+		font-size:1.4rem;
+	}
+
+	p span {
+		font-weight:700;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+
+	.resume__intro {
+		flex-direction:column;
+
+		.resume__intro__contact {
+			width:100%;
+		}
+	}
+
+	h3.resume__subheader {
+		left:50%;
+		transform:translateX(-50%);
+
+		&:before {
+			width:60%;
+			left:20%;
+		}
+	}
+
+
+}
+

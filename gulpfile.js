@@ -3,11 +3,13 @@ const sass = require("gulp-sass");
 const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const terser = require('gulp-terser');
+const sassGlob = require('gulp-sass-glob');
 
 const browserSync = require('browser-sync').create();
 
 function sassTask() {
   return gulp.src("styles/**/*.scss")
+    .pipe(sassGlob())
 	  .pipe(sass())
     .pipe(postcss([cssnano()]))
     .pipe(gulp.dest('dist/css', { sourcemaps: '.' }));
